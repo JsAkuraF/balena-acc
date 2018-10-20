@@ -4,4 +4,4 @@
 modprobe i2c-dev
 
 # Start Game of Life
-python life.py
+python acc.py
