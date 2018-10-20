@@ -1,5 +1,5 @@
 from sense_hat import SenseHat
-
+import time
 sense = SenseHat()
 
 while True:
@@ -11,6 +11,7 @@ while True:
 	x=round(x, 0)
 	y=round(y, 0)
 	z=round(z, 0)
-	message = 'Temperature is %d F Humidity is %d percent Pressure is %d mbars' %(x,y,z)
+	message = '%%%'(x,y,z)
 
-	sense.show_message(message, scroll_speed=(0.00),text_colour=[200,0,200], back_colour= [0,0,0])
+	sense.show_message(message, scroll_speed=(0.05),text_colour=[200,0,200], back_colour= [0,0,0])
+	time.sleep(1)
