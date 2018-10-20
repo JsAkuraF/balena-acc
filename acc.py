@@ -11,5 +11,6 @@ while True:
 	x=round(x, 0)
 	y=round(y, 0)
 	z=round(z, 0)
+	message = 'Temperature is %d F Humidity is %d percent Pressure is %d mbars' %(x,y,z)
 
-	print("x={0}, y={1}, z={2}".format(x, y, z))
+	sense.show_message(message, scroll_speed=(0.00),text_colour=[200,0,200], back_colour= [0,0,200])
